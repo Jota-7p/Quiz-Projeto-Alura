@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz de Conhecimentos Gerais</title>
+</head>
+
+<body>
+    <header>Quiz de Conhecimentos Gerais</header>
+
+    <section class="quiz-container">
+        <div id="quiz">
+            <h2 id="question">Pergunta irá aparecer aqui</h2>
+
+            <div class="options">
+                <button class="option" onclick="checkAnswer(0)">Opção 1</button>
+                <button class="option" onclick="checkAnswer(1)">Opção 2</button>
+                <button class="option" onclick="checkAnswer(2)">Opção 3</button>
+                <button class="option" onclick="checkAnswer(3)">Opção 4</button>
+            </div>
+
+            <button id="next-btn" onclick="nextQuestion()">Próxima</button>
+        </div>
+
+        <div id="result" style="display: none;">
+            <h2>Seu resultado:</h2>
+            <p id="score"></p>
+            <button onclick="restartQuiz()">Recomeçar</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
